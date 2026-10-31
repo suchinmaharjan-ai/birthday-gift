@@ -1,0 +1,1157 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday, My Love ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+    --pink: #ff8fab;
+    --light-pink: #ffe4ec;
+    --rose: #e75480;
+    --purple: #b8a1e3;
+    --cream: #fff8f5;
+    --dark: #593747;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: var(--cream);
+    color: var(--dark);
+    overflow-x: hidden;
+}
+
+button, input, textarea {
+    font-family: inherit;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+}
+
+section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+h1, h2 {
+    font-family: 'Great Vibes', cursive;
+    font-weight: normal;
+}
+
+h2 {
+    font-size: clamp(2.5rem, 6vw, 3.5rem);
+    color: var(--rose);
+    margin-bottom: 15px;
+}
+
+.subtitle {
+    margin-bottom: 35px;
+    color: #92717e;
+}
+
+/* Floating hearts */
+
+.heart {
+    position: fixed;
+    bottom: -30px;
+    pointer-events: none;
+    z-index: 100;
+    animation: floatUp linear forwards;
+}
+
+@keyframes floatUp {
+    to {
+        transform: translateY(-110vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+/* HERO */
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 20px;
+    color: white;
+    background:
+        linear-gradient(rgba(63, 24, 48, .52), rgba(63, 24, 48, .58)),
+        url('https://images.unsplash.com/photo-1513151233558-d860c5398176?auto=format&fit=crop&w=1800&q=85')
+        center/cover;
+}
+
+.hero .small {
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: clamp(3.5rem, 10vw, 6.5rem);
+    line-height: 1.2;
+    text-shadow: 0 4px 20px #0005;
+}
+
+.hero p {
+    max-width: 550px;
+    line-height: 1.9;
+    margin: 20px auto;
+}
+
+.hero button, .main-btn {
+    background: white;
+    color: var(--rose);
+    padding: 14px 30px;
+    border-radius: 40px;
+    font-size: 15px;
+    font-weight: 600;
+    transition: .3s;
+    box-shadow: 0 5px 20px #0002;
+}
+
+.hero button:hover, .main-btn:hover {
+    transform: translateY(-4px);
+    background: var(--light-pink);
+}
+
+/* COUNTDOWN */
+
+.countdown {
+    background: linear-gradient(135deg, #ffe4ec, #f2e6ff);
+}
+
+.timer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.time-box {
+    background: white;
+    width: 110px;
+    padding: 22px 10px;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px #e7548018;
+}
+
+.time-box strong {
+    display: block;
+    font-size: 32px;
+    color: var(--rose);
+}
+
+.time-box span {
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+/* BIRTHDAY MESSAGE */
+
+.message-card {
+    max-width: 750px;
+    margin: auto;
+    padding: 40px;
+    background: white;
+    border-radius: 25px;
+    box-shadow: 0 10px 35px #e7548018;
+    line-height: 2;
+}
+
+/* BIRTHDAY CARD MAKER */
+
+.card-maker {
+    background: #fff0f4;
+}
+
+.card-preview {
+    max-width: 500px;
+    min-height: 220px;
+    margin: 25px auto;
+    padding: 30px;
+    border-radius: 25px;
+    background: linear-gradient(135deg, #ffb6c9, #d9b8f3);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 10px 30px #d98ba955;
+}
+
+.card-preview h3 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 40px;
+}
+
+.card-preview p {
+    margin-top: 12px;
+    line-height: 1.8;
+    overflow-wrap: anywhere;
+}
+
+.editor {
+    max-width: 500px;
+    margin: auto;
+}
+
+.editor input, .editor textarea {
+    width: 100%;
+    padding: 14px;
+    margin: 8px 0;
+    border: 1px solid #f4c5d4;
+    border-radius: 12px;
+    outline: none;
+    background: white;
+}
+
+.editor textarea {
+    resize: vertical;
+    min-height: 90px;
+}
+
+.main-btn {
+    background: var(--rose);
+    color: white;
+    margin: 10px 5px;
+}
+
+/* LOVE QUIZ */
+
+.quiz-container {
+    max-width: 600px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 25px;
+    background: white;
+    box-shadow: 0 10px 35px #e7548018;
+}
+
+.quiz-container h3 {
+    margin-bottom: 20px;
+}
+
+.answers {
+    display: grid;
+    gap: 12px;
+}
+
+.answer {
+    padding: 14px;
+    border-radius: 12px;
+    background: #ffe8ef;
+    color: var(--dark);
+    transition: .3s;
+}
+
+.answer:hover {
+    background: var(--pink);
+    color: white;
+    transform: scale(1.02);
+}
+
+#quiz-result {
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+/* PHOTO GALLERY */
+
+.gallery {
+    background: #fff0f4;
+}
+
+.slideshow {
+    max-width: 650px;
+    margin: 25px auto;
+    position: relative;
+}
+
+.slideshow img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 25px;
+    box-shadow: 0 10px 30px #0002;
+}
+
+.caption {
+    margin: 15px;
+    font-style: italic;
+}
+
+.slide-controls {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.slide-controls button {
+    padding: 12px 25px;
+    border-radius: 25px;
+    background: var(--rose);
+    color: white;
+}
+
+.upload-area {
+    margin: 25px auto;
+}
+
+.upload-area input {
+    max-width: 250px;
+}
+
+/* FINAL SURPRISE */
+
+.surprise {
+    background: linear-gradient(135deg, #f5d9eb, #ffe7ed);
+}
+
+.hidden {
+    display: none !important;
+}
+
+.love-letter {
+    max-width: 650px;
+    margin: 30px auto;
+    background: white;
+    border-radius: 25px;
+    padding: 35px;
+    line-height: 2;
+    box-shadow: 0 10px 30px #e7548020;
+    animation: reveal .8s ease;
+}
+
+@keyframes reveal {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+video {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+/* FOOTER */
+
+footer {
+    background: #593747;
+    color: white;
+    padding: 35px 20px;
+    text-align: center;
+    line-height: 2;
+}
+
+footer a {
+    color: #ffb6c9;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/* CONFETTI */
+
+.confetti {
+    position: fixed;
+    top: -15px;
+    z-index: 999;
+    pointer-events: none;
+    animation: fall 3s linear forwards;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(110vh) rotate(720deg);
+        opacity: 0;
+    }
+}
+
+/* RESPONSIVE */
+
+@media(max-width: 600px) {
+    section {
+        padding: 65px 15px;
+    }
+
+    .time-box {
+        width: 75px;
+        padding: 15px 5px;
+    }
+
+    .time-box strong {
+        font-size: 25px;
+    }
+
+    .slideshow img {
+        height: 280px;
+    }
+
+    .message-card, .quiz-container, .love-letter {
+        padding: 22px;
+    }
+
+    .hero h1 {
+        font-size: 3.5rem;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- FLOATING HEARTS -->
+<div id="hearts"></div>
+
+<!-- HOME PAGE -->
+<header class="hero" id="home">
+
+    <div class="small">A special day for someone special ❤️</div>
+
+    <h1>Happy Birthday,<br>My Love!</h1>
+
+    <p>
+        Today is all about you, my beautiful girl.
+        You make my world brighter, my days happier
+        and my life more meaningful.
+        I am so lucky to have you.
+        Here's to your beautiful smile and endless happiness!
+    </p>
+
+    <button onclick="document.getElementById('birthday-message').scrollIntoView({behavior:'smooth'})">
+        Open Your Surprise 💝
+    </button>
+
+</header>
+
+<!-- INTRODUCTION -->
+<section id="birthday-message">
+
+    <h2>To My Beautiful Girl</h2>
+
+    <p class="subtitle">A little message from my heart...</p>
+
+    <div class="message-card">
+        Happy Birthday, sweetheart! ❤️
+
+        <br><br>
+
+        I wish I could wrap all my love, happiness
+        and countless hugs into one beautiful gift.
+
+        You deserve every beautiful thing this world
+        has to offer. May your life always be filled
+        with laughter, love, success and unforgettable
+        memories.
+
+        <br><br>
+
+        Thank you for being you.
+        I love you more than words can explain. 💗
+
+    </div>
+</section>
+
+<!-- COUNTDOWN -->
+<section class="countdown" id="countdown">
+
+    <h2>Counting Down To Your Special Day</h2>
+
+    <p class="subtitle">Every second brings us closer to celebrating you! 💕</p>
+
+    <div class="timer">
+
+        <div class="time-box">
+            <strong id="days">00</strong>
+            <span>Days</span>
+        </div>
+
+        <div class="time-box">
+            <strong id="hours">00</strong>
+            <span>Hours</span>
+        </div>
+
+        <div class="time-box">
+            <strong id="minutes">00</strong>
+            <span>Minutes</span>
+        </div>
+
+        <div class="time-box">
+            <strong id="seconds">00</strong>
+            <span>Seconds</span>
+        </div>
+
+    </div>
+
+    <p id="countdown-message" style="margin-top:25px;"></p>
+
+</section>
+
+<!-- VIRTUAL BIRTHDAY CARD -->
+<section class="card-maker">
+
+    <h2>A Little Birthday Card 💌</h2>
+
+    <p class="subtitle">Create a beautiful birthday message!</p>
+
+    <div class="editor">
+
+        <input type="text" id="card-name"
+               placeholder="Her name">
+
+        <textarea id="card-message"
+          placeholder="Write your beautiful birthday message..."></textarea>
+
+        <button class="main-btn" onclick="updateCard()">
+            Create My Card 💗
+        </button>
+
+    </div>
+
+    <div class="card-preview" id="card-preview">
+
+        <h3>Happy Birthday!</h3>
+
+        <p id="preview-message">
+            To my favourite person in the world.
+            May your day be as beautiful as your smile. ❤️
+        </p>
+
+        <p>With all my love 💕</p>
+
+    </div>
+
+    <button class="main-btn" onclick="shareCard()">
+        Share Birthday Card
+    </button>
+
+</section>
+
+<!-- RELATIONSHIP QUIZ -->
+<section>
+
+    <h2>How Well Do You Remember Us? 💑</h2>
+
+    <p class="subtitle">Let's see how well you remember our little story!</p>
+
+    <div class="quiz-container">
+
+        <h3 id="question">Question 1</h3>
+
+        <div class="answers" id="answers"></div>
+
+        <p id="quiz-result"></p>
+
+        <button class="main-btn hidden" id="next-question"
+                onclick="nextQuestion()">
+            Next Question ❤️
+        </button>
+
+    </div>
+
+</section>
+
+<!-- PHOTO GALLERY -->
+<section class="gallery">
+
+    <h2>Our Beautiful Memories 📸</h2>
+
+    <p class="subtitle">
+        Every picture tells a little story of us.
+    </p>
+
+    <div class="slideshow">
+
+        <img id="slide-image"
+             src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&w=1200&q=85"
+             alt="Romantic memory">
+
+        <p class="caption" id="slide-caption">
+            Every moment with you is special ❤️
+        </p>
+
+    </div>
+
+    <div class="slide-controls">
+        <button onclick="changeSlide(-1)">❮ Previous</button>
+        <button onclick="changeSlide(1)">Next ❯</button>
+    </div>
+
+    <div class="upload-area">
+
+        <p><b>Add your favourite pictures together:</b></p>
+
+        <input type="file" id="photo-upload"
+               accept="image/*" multiple>
+
+        <p id="upload-status"></p>
+
+    </div>
+
+</section>
+
+<!-- FINAL SURPRISE -->
+<section class="surprise">
+
+    <h2>One Last Surprise... 🎁</h2>
+
+    <p class="subtitle">
+        I have something special waiting just for you.
+    </p>
+
+    <button class="main-btn" id="surprise-button"
+            onclick="openSurprise()">
+        Click To Reveal Your Surprise ❤️
+    </button>
+
+    <div id="final-surprise" class="hidden">
+
+        <div class="love-letter">
+
+            <h2>My Dearest Love ❤️</h2>
+
+            <p>
+                If I could choose one person to share
+                all my beautiful tomorrows with,
+                I would choose you again and again.
+
+                <br><br>
+
+                I may not always find the perfect words
+                to express my feelings, but please know
+                that you mean the world to me.
+
+                <br><br>
+
+                I want to see you achieve every dream,
+                laugh until your cheeks hurt,
+                travel to beautiful places together
+                and create countless memories.
+
+                <br><br>
+
+                No matter what life brings,
+                I hope we continue choosing each other.
+
+                <br><br>
+
+                Happy Birthday, my princess.
+                I LOVE YOU FOREVER! ❤️
+
+                <br><br>
+
+                Yours always,
+                <br>
+                Your Favourite Person 💋
+            </p>
+
+        </div>
+
+        <h2>And Here's A Special Video For You! 🎬</h2>
+
+        <video id="birthday-video"
+               controls
+               playsinline
+               preload="metadata">
+            <source src="birthday-message.mp4" type="video/mp4">
+            Your browser does not support video.
+        </video>
+
+        <p style="margin-top:15px;">
+            Made with love, just for you. ❤️
+        </p>
+
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+
+    <h2 style="color:#ffb6c9;">Made With Love ❤️</h2>
+
+    <p>Thank you for being part of my beautiful world.</p>
+
+    <p>Happy Birthday, once again, my love! 💗</p>
+
+    <div style="margin-top:15px;">
+
+        <a href="https://www.instagram.com/"
+           target="_blank" rel="noopener">Instagram</a>
+
+        <a href="https://www.facebook.com/"
+           target="_blank" rel="noopener">Facebook</a>
+
+        <a href="https://wa.me/"
+           target="_blank" rel="noopener">WhatsApp</a>
+
+    </div>
+
+    <p style="margin-top:20px;font-size:12px;">
+        © 2026 | Created with endless love 💕
+    </p>
+
+</footer>
+
+<script>
+
+// ===================================
+// 1. BIRTHDAY COUNTDOWN
+// ===================================
+
+// CHANGE THIS TO HER NEXT BIRTHDAY.
+// Format: YYYY-MM-DDTHH:MM:SS
+// This example automatically targets the next October 31.
+
+const BIRTHDAY_MONTH = 10; // 1 = January, 10 = October
+const BIRTHDAY_DAY = 31;
+const BIRTHDAY_HOUR = 0;
+
+function getNextBirthday() {
+    const now = new Date();
+
+    let year = now.getFullYear();
+
+    let birthday = new Date(
+        year,
+        BIRTHDAY_MONTH - 1,
+        BIRTHDAY_DAY,
+        BIRTHDAY_HOUR,
+        0, 0
+    );
+
+    if (birthday <= now) {
+        birthday = new Date(
+            year + 1,
+            BIRTHDAY_MONTH - 1,
+            BIRTHDAY_DAY,
+            BIRTHDAY_HOUR,
+            0, 0
+        );
+    }
+
+    return birthday;
+}
+
+const birthdayDate = getNextBirthday();
+
+function updateCountdown() {
+
+    const now = new Date();
+    const difference = birthdayDate - now;
+
+    if (difference <= 0) {
+        document.getElementById("days").textContent = "00";
+        document.getElementById("hours").textContent = "00";
+        document.getElementById("minutes").textContent = "00";
+        document.getElementById("seconds").textContent = "00";
+
+        document.getElementById("countdown-message").textContent =
+            "It's your special day! HAPPY BIRTHDAY! 🎂❤️";
+
+        return;
+    }
+
+    const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((difference / (1000 * 60 * 60)) % 24);
+    const minutes = Math.floor((difference / (1000 * 60)) % 60);
+    const seconds = Math.floor((difference / 1000) % 60);
+
+    document.getElementById("days").textContent = days;
+    document.getElementById("hours").textContent = hours;
+    document.getElementById("minutes").textContent = minutes;
+    document.getElementById("seconds").textContent = seconds;
+}
+
+updateCountdown();
+setInterval(updateCountdown, 1000);
+
+
+// ===================================
+// 2. FLOATING HEARTS
+// ===================================
+
+function createHeart() {
+
+    const heart = document.createElement("div");
+
+    heart.className = "heart";
+    heart.textContent = ["❤️", "💕", "💗", "💖", "🌸"][
+        Math.floor(Math.random() * 5)
+    ];
+
+    heart.style.left = Math.random() * 100 + "vw";
+    heart.style.fontSize = (15 + Math.random() * 25) + "px";
+    heart.style.animationDuration = (5 + Math.random() * 5) + "s";
+
+    document.body.appendChild(heart);
+
+    setTimeout(() => heart.remove(), 10000);
+}
+
+setInterval(createHeart, 500);
+
+
+// ===================================
+// 3. BIRTHDAY CARD MAKER
+// ===================================
+
+function updateCard() {
+
+    const name = document.getElementById("card-name").value.trim();
+    const message = document.getElementById("card-message").value.trim();
+
+    document.querySelector("#card-preview h3").textContent =
+        "Happy Birthday" + (name ? ", " + name : "!");
+
+    document.getElementById("preview-message").textContent =
+        message || "May your day be as beautiful as your smile! ❤️";
+}
+
+async function shareCard() {
+
+    updateCard();
+
+    const name = document.getElementById("card-name").value.trim();
+    const message = document.getElementById("card-message").value.trim();
+
+    const cardText =
+        "Happy Birthday " + name + "! ❤️\n\n" +
+        message + "\n\nWith all my love! 💕";
+
+    if (navigator.share) {
+        try {
+            await navigator.share({
+                title: "A Birthday Card For You ❤️",
+                text: cardText
+            });
+        } catch (error) {
+            if (error.name !== "AbortError") {
+                alert("Unable to share this card.");
+            }
+        }
+    } else if (navigator.clipboard) {
+        try {
+            await navigator.clipboard.writeText(cardText);
+            alert("Birthday card message copied! ❤️");
+        } catch (error) {
+            alert("Please copy your message manually.");
+        }
+    } else {
+        alert(cardText);
+    }
+}
+
+
+// ===================================
+// 4. LOVE QUIZ
+// ===================================
+
+// CUSTOMISE THESE QUESTIONS AND ANSWERS!
+
+const quiz = [
+
+    {
+        question: "Where did we first meet?",
+        answers: ["At a cafe ☕", "At a party 🎉", "Online 📱"],
+        correct: 0
+    },
+
+    {
+        question: "What is my favourite thing about you?",
+        answers: ["Your smile 😊", "Your eyes 👀", "Everything about you ❤️"],
+        correct: 2
+    },
+
+    {
+        question: "What would I choose?",
+        answers: ["A luxury car 🚗", "A trip with you ✈️", "A million dollars 💰"],
+        correct: 1
+    },
+
+    {
+        question: "How much do I love you?",
+        answers: ["A little 💗", "A lot 💕", "More than words can explain ❤️"],
+        correct: 2
+    }
+
+];
+
+let currentQuestion = 0;
+let score = 0;
+let answered = false;
+
+function loadQuestion() {
+
+    answered = false;
+
+    const q = quiz[currentQuestion];
+
+    document.getElementById("question").textContent =
+        q.question;
+
+    document.getElementById("quiz-result").textContent = "";
+
+    document.getElementById("next-question").classList.add("hidden");
+
+    const answers = document.getElementById("answers");
+
+    answers.innerHTML = "";
+
+    q.answers.forEach((answer, index) => {
+
+        const button = document.createElement("button");
+
+        button.className = "answer";
+        button.textContent = answer;
+
+        button.onclick = () => checkAnswer(index);
+
+        answers.appendChild(button);
+
+    });
+}
+
+function checkAnswer(index) {
+
+    if (answered) return;
+
+    answered = true;
+
+    const correct = quiz[currentQuestion].correct;
+
+    if (index === correct) {
+
+        score++;
+
+        document.getElementById("quiz-result").textContent =
+            "Correct! You know us so well! 💖";
+
+    } else {
+
+        document.getElementById("quiz-result").textContent =
+            "Oops! That's not the answer. But I still love you! 😘";
+
+    }
+
+    document.querySelectorAll(".answer").forEach(button => {
+        button.disabled = true;
+        button.style.opacity = "0.7";
+    });
+
+    const next = document.getElementById("next-question");
+
+    next.classList.remove("hidden");
+
+    next.textContent =
+        currentQuestion === quiz.length - 1
+        ? "See My Result ❤️"
+        : "Next Question ❤️";
+}
+
+function nextQuestion() {
+
+    currentQuestion++;
+
+    if (currentQuestion < quiz.length) {
+
+        loadQuestion();
+
+    } else {
+
+        document.getElementById("question").textContent =
+            "Our Love Quiz Is Complete! 💑";
+
+        document.getElementById("answers").innerHTML = "";
+
+        document.getElementById("quiz-result").textContent =
+            "You scored " + score + " out of " + quiz.length +
+            "! No matter the score, you're always my favourite person! ❤️";
+
+        document.getElementById("next-question").classList.add("hidden");
+
+    }
+}
+
+loadQuestion();
+
+
+// ===================================
+// 5. PHOTO SLIDESHOW
+// ===================================
+
+// REPLACE THESE WITH YOUR OWN PHOTOS.
+
+let slides = [
+
+    {
+        image: "https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&w=1200&q=85",
+        caption: "Every moment with you is special ❤️"
+    },
+
+    {
+        image: "https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&w=1200&q=85",
+        caption: "My favourite memories are the ones with you 💕"
+    },
+
+    {
+        image: "https://images.unsplash.com/photo-1529636798458-92182e662485?auto=format&fit=crop&w=1200&q=85",
+        caption: "Together is my favourite place to be 💗"
+    }
+
+];
+
+let currentSlide = 0;
+
+function showSlide() {
+
+    const image = document.getElementById("slide-image");
+
+    image.src = slides[currentSlide].image;
+
+    document.getElementById("slide-caption").textContent =
+        slides[currentSlide].caption;
+
+}
+
+function changeSlide(direction) {
+
+    currentSlide =
+        (currentSlide + direction + slides.length) % slides.length;
+
+    showSlide();
+
+}
+
+// Upload personal photographs.
+
+document.getElementById("photo-upload").addEventListener("change", function(event) {
+
+    const files = Array.from(event.target.files)
+        .filter(file => file.type.startsWith("image/"));
+
+    if (!files.length) return;
+
+    const uploaded = files.map(file => ({
+        image: URL.createObjectURL(file),
+        caption: "A beautiful memory of us ❤️",
+        uploaded: true
+    }));
+
+    slides.push(...uploaded);
+
+    currentSlide = slides.length - uploaded.length;
+
+    showSlide();
+
+    document.getElementById("upload-status").textContent =
+        files.length + " photo(s) added to your gallery! ❤️";
+
+});
+
+showSlide();
+
+
+// ===================================
+// 6. FINAL SURPRISE + VIDEO
+// ===================================
+
+let surpriseOpened = false;
+
+function openSurprise() {
+
+    const surprise = document.getElementById("final-surprise");
+    const button = document.getElementById("surprise-button");
+
+    surprise.classList.remove("hidden");
+
+    button.textContent = "Your Surprise Is Open! ❤️";
+    button.disabled = true;
+
+    surpriseOpened = true;
+
+    launchConfetti();
+
+    surprise.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+    });
+
+    // Play video only once during this page visit.
+    const video = document.getElementById("birthday-video");
+
+    if (!video.dataset.playAttempted) {
+
+        video.dataset.playAttempted = "true";
+
+        video.play().catch(() => {
+            // If playback is blocked, she can press the play button.
+        });
+
+    }
+
+}
+
+
+// ===================================
+// 7. CONFETTI ANIMATION
+// ===================================
+
+function launchConfetti() {
+
+    const emojis = ["❤️", "💕", "💗", "🎉", "🎊", "✨", "🌸"];
+
+    for (let i = 0; i < 100; i++) {
+
+        const confetti = document.createElement("div");
+
+        confetti.className = "confetti";
+
+        confetti.textContent =
+            emojis[Math.floor(Math.random() * emojis.length)];
+
+        confetti.style.left = Math.random() * 100 + "vw";
+
+        confetti.style.fontSize =
+            (12 + Math.random() * 20) + "px";
+
+        confetti.style.animationDuration =
+            (2 + Math.random() * 3) + "s";
+
+        document.body.appendChild(confetti);
+
+        setTimeout(() => confetti.remove(), 5500);
+
+    }
+
+}
+
+</script>
+
+</body>
+</html>
